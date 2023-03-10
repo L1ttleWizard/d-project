@@ -1,21 +1,18 @@
 $primary:teal;
 $some-color:#ffff55;
 $like:#fdfdfd;
+$font-size-base:1.2rem;
+
+$besh: #F5F5DC;
+
+$theme-colors: (
+  "besh":       #F5F5DC,
+  "lily":   #F6FFF8
+);
 @import "~bootstrap/scss/bootstrap";  
 @import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
+
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
-$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
-
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-);
+@import "bootstrap/scss/variables";
